@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <main>
     <header>
         <div class="logo">
-            <span>Web</span>
-            <span>Studio</span>
+            <span class="part1">Web</span>
+            <span class="part2">Studio</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Студія</a></li>
-                <li><a href="#">Портфоліо</a></li>
+            <ul class="header_menu header_list">
+                <li><a href="index.html">Студія</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <ul class="contacts header_list">
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
     </header>
     <section class="bg_block">
-        <h1>
+        <h1 class="bg_block__title">
             Ефективні рішення для вашого бізнесу
         </h1>
-        <button type="button">Замовити послугу</button>
+        <button class="order_a_service" type="button">Замовити послугу</button>
     </section>
-    <section class="about about_us">
-        <ul>
+    <section class="features_container">
+        <ul class="features_list">
             <li>
-                <h4>УВАГА ДО ДЕТАЛЕЙ</h4>
-                <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <h4 class="item_title">УВАГА ДО ДЕТАЛЕЙ</h4>
+                <p class="item_description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції
+                    .</p>
             </li>
             <li>
-                <h4>ПУНКТУАЛЬНІСТЬ</h4>
-                <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                <h4 class="item_title">ПУНКТУАЛЬНІСТЬ</h4>
+                <p class="item_description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе
+                    .</p>
             </li>
             <li>
-                <h4>ПЛАНУВАННЯ</h4>
-                <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+                <h4 class="item_title">ПЛАНУВАННЯ</h4>
+                <p class="item_description">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li>
-                <h4>СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-                <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                <h4 class="item_title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+                <p class="item_description">Значимість цих проблем настільки очевидна, що реалізація планових завдань
+                    .</p>
             </li>
         </ul>
     </section>
     <section class="what what_we_do">
         <h2>Чим ми займаємося</h2>
-
-        <ul>
+        <ul class="what_we_do_list">
             <li><img width="370" height="294" src="images/what_we_do1.jpg" alt="ноутбук"></li>
             <li><img width="370" height="294" src="images/what_we_do2.jpg" alt="ноутбук"></li>
             <li><img width="370" height="294" src="images/what_we_do3.jpg" alt="колесо кольорыв"></li>
@@ -58,24 +67,24 @@
     </section>
     <section class="our our_team">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class="our_team_list">
             <li><img width="270" height="260" src="images/manager1.jpg" alt="Ігор Дем'яненко">
-                <h5>Ігор Дем'яненко</h5>
+                <h5 class="item_title">Ігор Дем'яненко</h5>
                 <p>Product Designer</p>
             </li>
             <li>
                 <img width="270" height="260" src="images/manager2.jpg" alt="Ольга Рєпіна">
-                <h5>Ольга Рєпіна</h5>
+                <h5 class="item_title">Ольга Рєпіна</h5>
                 <p>Frontend Developer</p>
             </li>
             <li>
                 <img width="270" height="260" src="images/manager3.jpg" alt="Микола Тарасов">
-                <h5>Микола Тарасов</h5>
+                <h5 class="item_title">Микола Тарасов</h5>
                 <p>Marketing</p>
             </li>
             <li>
                 <img width="270" height="260" src="images/manager4.jpg" alt="Михайло Єрмаков">
-                <h5>Михайло Єрмаков</h5>
+                <h5 class="item_title">Михайло Єрмаков</h5>
                 <p>UI Designer</p>
             </li>
         </ul>
@@ -84,13 +93,14 @@
     </section>
     <footer>
         <div class="logo">
-            <span>Web</span>
-            <span>Studio</span>
+            <span class="part1">Web</span>
+            <span class="part2">Studio</span>
         </div>
-        <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <p>info@example.com</p>
-        <p>+38 099 111 11 11</p>
-
+        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+        <ul>
+            <li class="contact_info">info@example.com</li>
+            <li class="contact_info">+38 099 111 11 11</li>
+        </ul>
     </footer>
 </main>
 
