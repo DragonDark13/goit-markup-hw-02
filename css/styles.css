@@ -22,12 +22,15 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--black);
     display: flex;
+    text-decoration: none;
+    color: var(--hover-color);
+
 }
 
-.logo .part1 {
-    color: var(--hover-color);
+
+.logo .part2 {
+    color: var(--black);
 }
 
 .header_list {
@@ -122,13 +125,14 @@ body {
 .our_team_list .item_title {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 16px;
+    line-height: 1.18;
     text-transform: uppercase;
 }
 
 
 .our_team_list .item_description {
+    font-size: 16px;
     line-height: 1.18;
     color: var(--gray-text-color);
 }
@@ -147,9 +151,19 @@ footer .logo .part2 {
     color: var(--white-text-color);
 }
 
-.contact_info {
+.footer_contact_list {
+    list-style: none;
+}
+
+
+.contact_info a {
+    text-decoration: none;
     line-height: 1.7;
     color: var(--footer_text-color);
+}
+
+.contact_info a:hover {
+    color: var(--hover-color);
 }
 
 .filter_list {
@@ -160,7 +174,6 @@ footer .logo .part2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    /* identical to box height, or 162% */
     text-align: center;
     background-color: var(--filter_button_bg);
 
@@ -170,7 +183,6 @@ footer .logo .part2 {
     background-color: var(--hover-color);
     color: var(--white-text-color);
     cursor: pointer;
-
 }
 
 .portfolio_list {
