@@ -124,10 +124,9 @@ body {
 
 .our_team_list .item_title {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    text-transform: uppercase;
 }
 
 
